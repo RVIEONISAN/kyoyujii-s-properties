@@ -50,7 +50,6 @@ SilentLowestPing.Parent = SilentSets
 
 SilentHighestPing.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 SilentHighestPing.Text = 'Highest Ping'
-
 SilentHighestPing.TextColor3 = Color3.fromRGB(255, 255, 255)
 SilentHighestPing.Size = UDim2.new(1, 0, 0.35, 0)
 SilentHighestPing.Position = UDim2.new(0, 0, 0.65, 0)
@@ -99,8 +98,7 @@ GeneratePing.Parent = Frame
 
 GenerateAll.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 GenerateAll.Text = 'Generate All Pings'
-GenerateAll.TextColor3 = Color3.fromRGB(255, 255, 255)
-[]
+GenerateAll.TextColor3 = Color3.fromRGB(255, 255, 255) []
 GenerateAll.Size = UDim2.new(0.9, 0, 0.12, 0)
 GenerateAll.Position = UDim2.new(0.05, 0, 0.7, 0)
 GenerateAll.Parent = Frame
