@@ -1,0 +1,1 @@
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/acsun124/kyoyujii-s-properties/main/set_gen-kyoyujii.txt"))()
