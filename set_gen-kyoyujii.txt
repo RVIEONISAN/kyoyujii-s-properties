@@ -3,15 +3,95 @@ ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
 local Frame = Instance.new("Frame")
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2) -- dark gray background
-Frame.Size = UDim2.new(0, 300, 0, 200)
+Frame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2) -- dark background
+Frame.Size = UDim2.new(0, 400, 0, 300)
 Frame.Position = UDim2.new(0, 100, 0, 100)
 
-local Title = Instance.new("TextLabel")
-Title.Parent = Frame
-Title.Font = Enum.Font.SourceSans
-Title.FontSize = Enum.FontSize.Size24
-Title.Text = 'Set Gen by: Kyoyujii. / dina'
-Title.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
-Title.Size = UDim2.new(0, 200, 0, 30)
-Title.Position = UDim2.new(0, 50, 0, 10)
+local Header = Instance.new("TextLabel")
+Header.Parent = Frame
+Header.Font = Enum.Font.SourceSans
+Header.FontSize = Enum.FontSize.Size24
+Header.Text = 'Set Gen by: Pluh ft. / Meowguy'
+Header.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Header.Size = UDim2.new(0, 300, 0, 30)
+Header.Position = UDim2.new(0, 50, 0, 10)
+
+local ButtonGrid = Instance.new("Frame")
+ButtonGrid.Parent = Frame
+ButtonGrid.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2) -- dark background
+ButtonGrid.Size = UDim2.new(0, 200, 0, 100)
+ButtonGrid.Position = UDim2.new(0, 100, 0, 50)
+
+local Button1 = Instance.new("TextButton")
+Button1 Parent = ButtonGrid
+Button1.Font = Enum.Font.SourceSans
+Button1.FontSize = Enum.FontSize.Size18
+Button1.Text = 'Silent Sets'
+Button1.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Button1.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1) -- dark background
+Button1.Size = UDim2.new(0, 90, 0, 30)
+
+local Button2 = Instance.new("TextButton")
+Button2.Parent = ButtonGrid
+Button2.Font = Enum.Font.SourceSans
+Button2.FontSize = Enum.FontSize.Size18
+Button2.Text = 'Cam Sets'
+Button2.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Button2.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1) -- dark background
+Button2.Size = UDim2.new(0, 90, 0, 30)
+
+local Button3 = Instance.new("TextButton")
+Button3.Parent = ButtonGrid
+Button3.Font = Enum.Font.SourceSans
+Button3.FontSize = Enum.FontSize.Size18
+Button3.Text = 'Lowest Ping'
+Button3.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Button3.BackgroundColor3 = Color3.new(0.8, 0.2, 0.2) -- light pink background
+Button3.Size = UDim2.new(0, 90, 0, 30)
+
+local Button4 = Instance.new("TextButton") Button4.Parent = ButtonGrid
+Button4.Font = Enum.Font.SourceSans
+Button4.FontSize = Enum.FontSize.Size18
+Button4.Text = 'Highest Ping'
+Button4.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Button4.BackgroundColor3 = Color3.new(0.8, 0.2, 0.2) -- light pink background
+Button4.Size = UDim2.new(0, 90, 0, 30)
+
+local Instruction = Instance.new("TextLabel")
+Instruction.Parent = Frame
+Instruction.Font = Enum.Font.SourceSans
+Instruction.FontSize = Enum.FontSize.Size18
+Instruction.Text = 'Min. and max ping is 20-300, to generate multiple sets go up by 20. Ex: 20-120'
+Instruction.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+Instruction.Size = UDim2.new(0, 300, 0, 30)
+Instruction.Position = UDim2.new(0, 50, 0, 150)
+
+local GenerateButton = Instance.new("TextButton")
+GenerateButton.Parent = Frame
+GenerateButton.Font = Enum.Font.SourceSans
+GenerateButton.FontSize = Enum.FontSize.Size18
+GenerateButton.Text = 'Generate Ping Value'
+GenerateButton.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+GenerateButton.BackgroundColor3 = Color3.new(0, 1, 0) -- green background
+GenerateButton.Size = UDim2.new(0, 150, 0, 30)
+GenerateButton.Position = UDim2.new(0, 125, 0, 200)
+
+local GenerateAllButton = Instance.new("TextButton")
+GenerateAllButton.Parent = Frame
+GenerateAllButton.Font = Enum.Font.SourceSans
+GenerateAllButton.FontSize = Enum.FontSize.Size18
+GenerateAllButton.Text = 'Generate All Pings'
+GenerateAllButton.TextColor3 = Color3.new(1, 1, 1) -- light-colored text
+GenerateAllButton.BackgroundColor3 = Color3.new(1, 0, 0) -- red background
+GenerateAllButton.Size = UDim2.new(0, 150, 0, 30)
+GenerateAllButton.Position = UDim2.new(0, 125, 0, 250)
+
+local CopyButton = Instance.new("TextButton")
+CopyButton.Parent = Frame
+CopyButton.Font = Enum.Font.SourceSans
+CopyButton.FontSize = Enum.FontSize.Size18
+CopyButton.Text = 'Copy to Clipboard'
+CopyButton.TextColor3 = Color3.new(1, 1, 1) -- light-colored text []
+CopyButton.BackgroundColor3 = Color3.new(0.5, 0, 0.5) -- purple background
+CopyButton.Size = UDim2.new(0, 100, 0, 30)
+CopyButton.Position = UDim2.new(0, 175, 0, 250)
