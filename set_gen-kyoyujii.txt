@@ -1,1 +1,2 @@
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/{RVIEONISAN}/kyoyujii-s-properties/main/set_gen-kyoyujii.txt"))()
+print("Script is running!")
+-- loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/{RVIEONISAN}/kyoyujii-s-properties/main/set_gen-kyoyujii.txt"))()
